@@ -61,4 +61,33 @@ redis 172.17.0.2:6379>
 ### Screencast for Part 2
 ![screencast for part2](https://cloud.githubusercontent.com/assets/11006675/11345901/ed2f89ee-91e7-11e5-9ff9-bc12295780e2.gif)
 
+## Docker Deploy
+* Create a digital ocean droplet and ssh into that droplet
+* Install the required packages such as git, npm, nodejs etc.
+* Follow the steps given in the 'Deployment' workshop to setup the blue green infrastructure
+* Run the following command to clone the node app
+```
+git clone https://github.com/CSC-DevOps/App.git
+```
+* Then create a post-commit hook in the 'App' folder
+* Change permissions for the hook as follows:
+```
+chmod +x post-commit
+```
+* Edit the post-receive hook in /blue.git/hooks folder, /green.git/hooks and change permissions as follows:
+```
+chmod +x post-receive
+```
+* On commiting the main.js file in the App folder, the post-commit hook will run and the image will be built and pushed to the registry
+* Then a push can be made to blue slice or green slice as follows:
+```
+git push green master
+git push blue master
+```
+* On pushing the container will be pulled from the registry and deployed.
+* Go the url localhost:5001 for green slice and localhost:5002 for green slice to see the runnig app
+* Or run the following command with respective port number to check status of running app
+```
+curl -i localhost:5001
+```
 
