@@ -1,6 +1,5 @@
 # HW4
 ## FILE IO
-### Create a container that runs a command that outputs to a file.
 * Create a droplet on digital ocean and ssh into that droplet
 * Then run the following commands to install docker
 ```
@@ -28,6 +27,7 @@ docker exec -it 47c103244b6b /bin/bash
 ```
 curl server:9001
 ```
-
+### Screencast for Part 1
+![screencast for hw4 part1](https://cloud.githubusercontent.com/assets/11006675/11339255/b36742f4-91c6-11e5-9c84-bc2fcb662300.gif)
  
 
