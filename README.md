@@ -58,4 +58,7 @@ redis 172.17.0.2:6379> get myKeyValue
 redis 172.17.0.2:6379> 
 ```
 
+### Screencast for Part 2
+![screencast for part2](https://cloud.githubusercontent.com/assets/11006675/11345901/ed2f89ee-91e7-11e5-9ff9-bc12295780e2.gif)
+
 
