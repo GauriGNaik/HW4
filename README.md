@@ -65,6 +65,10 @@ redis 172.17.0.2:6379>
 * Create a digital ocean droplet and ssh into that droplet
 * Install the required packages such as git, npm, nodejs etc.
 * Follow the steps given in the 'Deployment' workshop to setup the blue green infrastructure
+* Run the following to start registry
+```
+docker run -d -p 5000:5000 --restart=always --name registry registry:2
+```
 * Run the following command to clone the node app
 ```
 git clone https://github.com/CSC-DevOps/App.git
