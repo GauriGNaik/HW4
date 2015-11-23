@@ -91,3 +91,5 @@ git push blue master
 curl -i localhost:5001
 ```
 
+### Screencast for Part 3
+![screencast for part3](https://cloud.githubusercontent.com/assets/11006675/11352198/03110dca-9209-11e5-9535-d437bb374890.gif)
