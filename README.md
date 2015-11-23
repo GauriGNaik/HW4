@@ -88,9 +88,9 @@ chmod +x post-receive
 git push green master
 git push blue master
 ```
-* On pushing the container will be pulled from the registry and deployed.
-* Go the url localhost:5001 for green slice and localhost:5002 for green slice to see the runnig app
-* Or run the following command with respective port number to check status of running app
+* On pushing to a slice, the container will be pulled from the registry and deployed.
+* Go the url localhost:5001 for green slice and localhost:5002 for green slice to see the running app
+* Or run the following command with respective port number 5001 or 5002 to check status of running app
 ```
 curl -i localhost:5001
 ```
