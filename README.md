@@ -28,6 +28,6 @@ docker exec -it 47c103244b6b /bin/bash
 curl server:9001
 ```
 ### Screencast for Part 1
-![screencast for hw4 part1](https://cloud.githubusercontent.com/assets/11006675/11339255/b36742f4-91c6-11e5-9c84-bc2fcb662300.gif)
- 
+![screencast for part1](https://cloud.githubusercontent.com/assets/11006675/11339545/fb841b88-91c7-11e5-94ac-e2f997ea3fc7.gif)
+
 
