@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sudo docker build -t my-app .
+
+sudo docker tag my-app localhost:5000/my-registry:latest
+
+sudo docker push localhost:5000/my-registry:latest

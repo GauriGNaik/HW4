@@ -1,0 +1,6 @@
+#!/bin/bash
+GIT_WORK_TREE=$ROOT/green-www/ git checkout -f
+docker pull localhost:5000/my-registry:latest
+docker stop green
+docker rm green
+docker run -p 5002:8080 -d --name green my-app

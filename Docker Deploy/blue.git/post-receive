@@ -1,0 +1,11 @@
+!/bin/bash
+
+GIT_WORK_TREE=$ROOT/blue-www/ git checkout -f
+
+docker pull localhost:5000/my-registry:latest
+
+docker stop blue
+
+docker rm blue
+
+docker run -p 5001:8080 -d --name blue my-app
